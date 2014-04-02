@@ -1,16 +1,106 @@
+
 %Teoria
 
 
 In this chapter error sources are introduced because before we can start
-testing errors in video we must understand where are the
-erros generated.That will also help genereting test methods but also
+testing errors in video we must understand where and why are the
+erros generated. That will also help developing test methods but also
 understanding results and actions followed by them. 
 
 I have diveded erros in the algroritmic and hardware based
-errors. Main focus will be on the algorithmic errors, but essential errors
-like noise is mostly based on hardware so those will be also introduced. Some
+errors. Main focus will be on the algorithmic errors, but essential hardware 
+errors like noise are also introduced. Some
 errors have overlapping reasons like in example jitter might be caused by
-poor processor performance or designs errors in architechture. 
+poor processor performance or error in algrorithm design. Those are handled
+by the most dominant reason base. So ie.\textit{noise} is categorized as hardware
+error, but \textit{jitter} is handled in algrotihm side.  
+
+Errors produced in transmission like in videocalls, over network streaming,
+watching videos from www.youtube.com are not dealt with in this thesis. 
+
+
+
+
+\section{Algorithmic errors}
+Algorithms include:
+--Exposure
+--White Balance
+--Focus
+--Coding/Encoding
+---Many things in here
+
+\subsection{Blockiness}
+-Fixed framerate vs. non fixed framerate
+-Too low bitstream
+-how it is seen
+
+\subsection{Blurr}
+-shutter speed
+-Fixed framerate vs. non fixed framerate
+
+
+\subsection{Blink}
+-Exposure jumping
+
+
+\subsection{Motion smoothness}
+
+\subsection{Jaggy edge}
+-bitsteam, codec
+-how it is seen/detected
+
+\subsection{Frame drop}
+-Jitter
+-Jerkiness
+\subsection{Sound Sync}
+-
+\subsection{Moir\'{e}-effect}
+
+\subsection{Aliasing}
+
+\section{Hardware  erros}
+
+\subsection{Noise}
+
+Noise 
+
+\subsubsection{Temporal noise sources}
+-Reset noise
+-Thermal noise
+-1/f noise
+-dark current shot noise
+-quantization noise
+-phase noise
+\subsubsection{Spatial noise sources}
+-dark fixed-pattern noise
+-PRNU
+-leakers
+-defect pixels
+-cosmetic defects
+
+
+
+
+
+
+
+
+\subsection{Frame drop}
+-also SW error
+\subsection{Jellyness}
+-Ois and corners
+\subsection{CMOS and CCD sensor}
+-Noise from sensors
+--Temporal noise
+-Rolling shutter
+--Wobble
+--Skew
+--Smear
+--Partial exposure
+
+
+
+
 
 Testing citing ~\cite{4799375}
 
@@ -35,60 +125,6 @@ addign cites to get them visible in the end
 ~\cite{6229729}
 ~\cite{4347144}
 ~\cite{1247211}
-
-
-
-\section{Algorithmic errors}
-Algorithms include:
---Exposure
---White Balance
---Focus
---Coding/Encoding
----Many things in here
-
-\subsection{Blockiness}
--Too low bitstream
--how it is seen
-
-\subsection{Blurr}
--shutter speed
--temporal noise
--spatial noise
-\subsection{Noise}
--Colour noise
-
-\subsection{Blink}
--Exposure jumping
--
-\subsection{Motion smoothness}
-\subsection{Jaggy edge}
--bitsteam, codec
--how it is seen/detected
-\subsection{Frame drop}
--Jitter
--Jerkiness
-\subsection{Sound Sync}
--
-\subsection{Moir\'{e}-effect}
-\subsection{Aliasing}
-\section{Hardware  erros}
-\subsection{Frame drop}
--also SW error
-\subsection{Jellyness}
--Ois and corners
-\subsection{CMOS and CCD sensor}
--Noise from sensors
---Temporal noise
--Rolling shutter
---Wobble
---Skew
---Smear
---Partial exposure
-
-
-
-
-
 
 
 
